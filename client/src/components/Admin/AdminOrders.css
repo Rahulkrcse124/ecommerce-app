@@ -1,0 +1,123 @@
+.admin-orders-container {
+  padding: 1.5rem;
+}
+
+.admin-orders-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Table Layout */
+.order-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-table-header {
+  display: grid;
+  grid-template-columns: 50px 130px 180px 180px 100px 100px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  align-items: center;
+}
+
+/* Order Row */
+.order-row {
+  display: grid;
+  grid-template-columns: 50px 130px 180px 180px 100px 100px;
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  align-items: center;
+}
+
+.order-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.status-dropdown {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-weight: 500;
+  width: 100%;
+  max-width: 120px;
+  font-size: 0.95rem;
+}
+
+/* Product List Below Each Row */
+.product-wrapper {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.product-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: #f9f9f9;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+}
+
+.product-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.product-details h6 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.product-details p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive for Mobile/Tablets */
+@media (max-width: 768px) {
+  .order-table-header,
+  .order-row {
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.9rem;
+  }
+
+  .status-dropdown {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .product-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-img {
+    width: 80px;
+    height: 80px;
+  }
+}

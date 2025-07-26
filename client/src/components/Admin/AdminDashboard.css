@@ -1,0 +1,77 @@
+.dashboard-container {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.dashboard-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.admin-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+.admin-card h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.admin-info p {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.admin-info p strong {
+  color: #000;
+}
+
+/* Hamburger Button */
+.hamburger-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Mobile Sidebar */
+.mobile-sidebar {
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .admin-card {
+    padding: 1.5rem;
+  }
+
+  .admin-card h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .admin-info p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}

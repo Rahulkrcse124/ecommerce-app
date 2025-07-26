@@ -1,0 +1,23 @@
+# === BACKEND ===
+node_modules/
+.env
+.env.*
+config/db.js
+
+# === FRONTEND ===
+client/node_modules/
+client/.env
+client/.env.*
+client/dist/
+client/.vite/
+
+# === LOG FILES ===
+*.log
+
+# === OS FILES ===
+.DS_Store
+Thumbs.db
+
+# === IDE FILES ===
+.vscode/
+.idea/

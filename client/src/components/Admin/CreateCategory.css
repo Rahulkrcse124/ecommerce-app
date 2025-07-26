@@ -1,0 +1,99 @@
+/* Dashboard page container */
+.dashboard-container {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Heading */
+.dashboard-container h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* Form section */
+.dashboard-container .p-3 {
+  background: #ffffff;
+  padding: 2rem !important;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Table styling */
+.dashboard-container .table {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-container th {
+  background-color: #2c3e50;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.dashboard-container td,
+.dashboard-container th {
+  padding: 1rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Action buttons */
+.dashboard-container .btn {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-container .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.dashboard-container .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.dashboard-container .btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.dashboard-container .btn-danger:hover {
+  background-color: #a71d2a;
+}
+
+/* Modal form */
+.ant-modal-content {
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.ant-modal-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container .row {
+    flex-direction: column;
+  }
+
+  .dashboard-container .col-md-3,
+  .dashboard-container .col-md-9 {
+    width: 100%;
+  }
+
+  .dashboard-container .p-3.w-50 {
+    width: 100% !important;
+  }
+
+  .dashboard-container table {
+    font-size: 0.9rem;
+  }
+}

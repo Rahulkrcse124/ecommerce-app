@@ -1,0 +1,55 @@
+.search-results-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.search-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.details-container {
+  padding: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+
+@media (min-width: 768px) {
+  .search-card {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .image-container {
+    flex: 1;
+    max-width: 40%;
+  }
+
+  .details-container {
+    flex: 2;
+  }
+
+  .image-container img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+

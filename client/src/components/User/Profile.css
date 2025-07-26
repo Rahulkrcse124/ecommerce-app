@@ -1,0 +1,89 @@
+/* Profile Page Styling */
+.profile-wrapper {
+  padding: 1rem;
+}
+
+.profile-container {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2rem 3rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  transition: all 0.3s ease-in-out;
+  margin-top: 1rem;
+}
+
+.profile-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.profile-info form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.profile-info .mb-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info label {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.profile-info input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease-in-out;
+}
+
+.profile-info input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+button.btn.btn-primary {
+  grid-column: span 2;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: #007bff;
+  border: none;
+  transition: background 0.3s ease-in-out;
+}
+
+button.btn.btn-primary:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1.5rem;
+  }
+
+  .profile-heading {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .profile-info form {
+    grid-template-columns: 1fr;
+  }
+
+  button.btn.btn-primary {
+    grid-column: span 1;
+  }
+}

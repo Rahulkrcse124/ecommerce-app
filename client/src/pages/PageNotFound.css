@@ -1,0 +1,56 @@
+.pnf {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  /* background-color: black; */
+  text-align: center;
+  padding: 2rem;
+}
+
+.pnf-title {
+  font-size: 8rem;
+  font-weight: 800;
+  color: #dc3545;
+  margin: 0;
+}
+
+.pnf-heading {
+  font-size: 2rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.pnf-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff; 
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.pnf-btn:hover {
+  background-color: #0056b3;
+}
+
+
+@media screen and (max-width: 768px) {
+  .pnf-title {
+    font-size: 5rem;
+  }
+
+  .pnf-heading {
+    font-size: 1.5rem;
+  }
+
+  .pnf-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

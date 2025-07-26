@@ -1,0 +1,99 @@
+/* Sticky navbar */
+.navbar {
+  background-color: #343a40 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  color: #ffc107 !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  color: #17a2b8 !important;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #212529;
+  border-radius: 0.5rem;
+  animation: fadeIn 0.3s ease-in-out;
+  padding: 0.5rem 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  transition: 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #343a40;
+  color: #ffc107;
+}
+
+/* Cart badge */
+.cart-badge {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    width: 100%;
+    background-color: #1c1c1c;
+    border: none;
+  }
+
+  .dropdown-item {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }
+
+  .searchbar {
+    margin-bottom: 10px;
+  }
+}

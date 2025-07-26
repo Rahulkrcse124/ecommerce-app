@@ -1,0 +1,89 @@
+/* Login Page Styling */
+
+.login-wrapper {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 30px 35px;
+  background-color: #f9fbff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-heading {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.login-form .form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.login-form .form-control {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  border: 1px solid #ced4da;
+  transition: 0.3s ease;
+}
+
+.login-form .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 6px rgba(13, 110, 253, 0.2);
+  outline: none;
+}
+
+/* Reset link */
+.reset-link {
+  background: none;
+  border: none;
+  color: #212529;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 12px;
+  float: right;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.reset-link:hover {
+  color: #dc3545;
+}
+
+/* Submit Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+  .login-wrapper {
+    margin: 30px 15px;
+    padding: 25px;
+  }
+
+  .login-heading {
+    font-size: 22px;
+  }
+
+  .reset-link {
+    font-size: 13px;
+  }
+
+  .login-btn {
+    font-size: 15px;
+  }
+}
