@@ -4,7 +4,24 @@ A full-stack E-Commerce web application built using **React (Vite)** for the fro
 
 ---
 
-## 📸 Demo (Optional)
+## 📸Project Images
+##Home page:
+<img width="1919" height="876" alt="Screenshot 2025-07-27 023109" src="https://github.com/user-attachments/assets/3a8c47fa-371e-4f5f-9a59-a9bb827c8c61" />
+
+##Login Page: 
+<img width="626" height="609" alt="Screenshot 2025-07-27 023303" src="https://github.com/user-attachments/assets/6c441fef-777c-4965-b504-37f3c5194165" />
+
+##Register Page
+<img width="507" height="765" alt="Screenshot 2025-07-27 023521" src="https://github.com/user-attachments/assets/8a8dde88-c32c-4ecd-8915-1b9ef98bd3b2" />
+
+##Admin Dashboard
+<img width="1896" height="877" alt="Screenshot 2025-07-27 023855" src="https://github.com/user-attachments/assets/1125bc5a-715a-443e-967f-84e5f44f949e" />
+
+
+
+
+
+
 
 <!-- Replace with your live link or screenshot -->
 ![App Screenshot](./screenshot.png)
