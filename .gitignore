@@ -2,7 +2,6 @@
 node_modules/
 .env
 .env.*
-config/db.js
 
 # === FRONTEND ===
 client/node_modules/
